@@ -10,7 +10,7 @@ The entire workspace for the student created robot is named as: "Student_model_w
 
 Student_model_workspace\workspace\catkin_ws\src\udacity_bot
 
-This project shows how AMCL technique effectively determines the pose of a mobile robot fusing camera and laser sensor data while the robot is in motion. Once robot’s current pose is determined, it can effectively plan its path for a new navigation goal.
+This project shows how AMCL technique effectively determines the pose of a mobile robot fusing camera and laser sensor data while the robot is in motion. Once robot’s current pose is determined, it can effectively plan its path for a new navigation goal. The C++ program Student_model_workspace\workspace\catkin_ws\src\udacity_bot\src\navigation_goal.cpp sends a new goal pose and location each time a robot is spawned in the Gazebo simulation environment. 
 
 For the purpose of the project ROS was used in Ubuntu OS, that launches a custom robot model in a Gazebo world and utilizes packages like AMCL and the Navigation Stack. These packages would accurately localize a mobile robot inside a provided map in the Gazebo and
 RViz simulation environments. Then specific parameters corresponding to each package were tuned to achieve the best possible localization results. The picture file "AMCL Parameter List1.png" shows the list of updated parameters for the laser scanner and wheel encoder.
